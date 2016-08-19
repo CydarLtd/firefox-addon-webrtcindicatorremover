@@ -11,3 +11,16 @@ In case you also wish to remove the popup that asks for permission to use camera
 
 ## Security and Privacy Implications
 Please take into account that there is a reason that the developers introduced this overlay. Especially the combination of the two options can have serious security implications, because any website could listen to your microphone and camera without you even noticing. Only use both options in controlled environments and just the addon only when its really necessary for your application.
+
+## Building and bundling
+
+- Install the Mozilla Add On SDK as described here: https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation
+
+- Ensure the `jpm` tool is in your path.
+
+- Build the extension with `jpm xpi`
+
+- Log in to https://addons.mozilla.org/en-GB/developers/addons and sign it.
+
+- Download the signed extension.
+
