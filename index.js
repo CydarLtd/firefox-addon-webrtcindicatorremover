@@ -47,7 +47,7 @@ Services.obs.addObserver(observer,"getUserMedia:response:allow",false)
 function waitForCondition(condition, nextTest) {
     var tries = 0;
     var interval = setInterval(function() {
-        if (tries >= 500) {
+        if (tries >= 2500) {
             moveOn();
         }
         var conditionPassed;
